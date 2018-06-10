@@ -3,10 +3,105 @@ body{
     url(../media/photos_2016_3_8_fst_82436195be9-95ee-459d-8f7d-65b84e7b4a84.jpg);
     /* photo from https://freestocktextures.com/photos-wood/ */
   background-size: 100%;
-}
-.container{
-
+  padding: 0 0px 30px;
+  line-height: 110%;
+  font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .primary-column{
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  padding: 0px 45px 5px;
+}
+.topmost-row{
+  padding-top: 40px;
+}
+a{
+  color: black;
+}
+a:link{
+  color: inherit;
+}
+a:hover{
+  color: rgba(146, 53, 48, 0.99);
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding: 0px;
+}
+.navbar{
+ border-top: solid black 1px;
+}
+.top-nav{
+  border-bottom: solid black 1px;
+  margin: 20px 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.top-nav .nav-link{
+padding: 0px 2rem;
+border-left: solid 1px darkgrey;
+}
+.top-nav .nav-link:first-of-type{
+  border-left: none;
+}
 
+img{
+  border: solid 1px black;
+  padding: 10px;
+  outline: 1px solid grey;
+  outline-offset: -8px;
+}
+.bg-img{
+  height: 350px;
+  width: 98%;
+}
+aside{
+  background-color: rgba(146, 53, 48, 0.99);
+  color: white;
+  padding: 20px 10px 6px;
+  font-size: 11px;
+}
+.aside-column{
+  padding: 0px;
+}
+aside li {
+  padding-bottom: 20px;
+}
+aside li:first-of-type{
+  font-size: 11px;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+aside hr{
+  border-bottom: 1px solid white;
+  margin: .5rem 0rem;
+}
+hr{
+  margin: 10px;
+}
+.news_feed{
+  height: 350px;
+  overflow: hidden;
+}
+.index-content{
+  margin: 12px 0px;
+  padding-top: 20px;
+  line-height: 140%;
+}
+.index-content::first-line{
+  font-weight: bolder;
+}
+.contact-info{
+  font-size: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.contact-info::first-line{
+  font-weight: bolder;
+}
+.contact-info a{
+  color: rgba(146, 53, 48, 0.99);
 }
