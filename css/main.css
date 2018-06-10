@@ -21,6 +21,11 @@ a{
 a:link{
   color: inherit;
 }
+.bottom-divider,
+.copyright-nav,
+.copyright-nav a{
+  color: #c0c0c0;
+}
 a:hover{
   color: rgba(146, 53, 48, 0.99);
   text-decoration: none;
@@ -104,4 +109,16 @@ hr{
 }
 .contact-info a{
   color: rgba(146, 53, 48, 0.99);
+}
+
+.bottom-nav{
+  font-size: 10px;
+  text-transform: uppercase;
+
+}
+.bottom-nav .nav-link{
+padding:0px .5rem;
+}
+.copyright-nav{
+  margin: 10px 0px;
 }
