@@ -4,7 +4,7 @@ body{
     /* photo from https://freestocktextures.com/photos-wood/ */
   background-size: 100%;
   padding: 0 0px 30px;
-  line-height: 110%;
+  line-height: 140%;
   font-size: 12px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
@@ -40,15 +40,18 @@ ul{
 .top-nav{
   border-bottom: solid black 1px;
   margin: 20px 0px;
-  padding: 10px;
   text-transform: uppercase;
   font-size: 12px;
+  padding: 0px 1rem;
 }
 .top-nav .nav-link{
-padding: 0px 2rem;
+padding: 0px 1.8rem;
 border-left: solid 1px darkgrey;
+margin: 5px;
+
 }
-.top-nav .nav-link:first-of-type{
+
+ .top-nav .nav-link:first-of-type{
   border-left: none;
 }
 
@@ -65,19 +68,31 @@ img{
 aside{
   background-color: rgba(146, 53, 48, 0.99);
   color: white;
-  padding: 20px 10px 6px;
+  padding: 20px 0px 6px;
   font-size: 11px;
+
+}
+aside a{
+  color: inherit;
+  font-size: 12px;
 }
 .aside-column{
-  padding: 0px;
+ /* margin-left: 15px; */
+/* margin-right: 45px; */
 }
+
 aside li {
   padding-bottom: 20px;
+}
+aside a:hover{
+  font-weight: bolder;
+  color: inherit;
 }
 aside li:first-of-type{
   font-size: 11px;
   font-weight: bold;
   padding-bottom: 0px;
+  text-transform: uppercase;
 }
 aside hr{
   border-bottom: 1px solid white;
@@ -85,15 +100,16 @@ aside hr{
 }
 hr{
   margin: 10px;
+
 }
-.news_feed{
+#news-feed{
   height: 350px;
   overflow: hidden;
+  padding: 20px 10px;
 }
 .index-content{
   margin: 12px 0px;
   padding-top: 20px;
-  line-height: 140%;
 }
 .index-content::first-line{
   font-weight: bolder;
@@ -101,10 +117,13 @@ hr{
 .contact-info{
   font-size: 10px;
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 25px;
+  line-height: 110%;
+
+
 }
 
-.contact-info::first-line{
+.contact-info ul li:first-child{
   font-weight: bolder;
 }
 .contact-info a{
