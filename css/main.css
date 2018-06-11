@@ -142,6 +142,11 @@ hr{
 #news p::first-line{
   font-weight: bold;
 }
+#location-header{
+  border-bottom: solid 1px black;
+  font-weight: bold;
+}
+
 .contact-info ul li:first-child{
   font-weight: bolder;
 }
