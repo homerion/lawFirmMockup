@@ -7,16 +7,15 @@
 </head>
 
 <body>
-  <!-- contain entire index page -->
-    <!-- everything is in a 10 wide column -->
-    <div class="col-md-10 offset-md-1 bg-light shadow container">
+  <!-- contains entire page in a 10 wide column -->
+    <div class="col-md-10 primary-column offset-md-1 bg-light container">
       <!-- brand row topmost -->
-      <div class="row">
+      <div class="row topmost-row">
         <!-- column to contain brand info -->
-        <div class="col-md-6 offset-md-1">
-          <h3>
+        <div class="col-md-5 offset-md-1">
+          <h2>
             <a href="../index.html">Homer, Hammer, &amp; Hall</a>
-          </h3>
+          </h2>
         </div>
         <!-- end column to contain brand info -->
       </div>
@@ -25,49 +24,105 @@
       <div class="row">
         <div class="col-md-12">
           <header>
-            <nav class="navbar justify-content-center top-nav">
+            <nav class="navbar nav justify-content-center top-nav">
 
               <!-- Links -->
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="who_we_are.html">
-                    Who We Are
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="what_we_do.html">
+
+              <a class="nav-link" href="who_we_are.html">
+                Who We Are
+              </a>
+
+                  <a class="nav-link" href="#">
                     What We Do
                   </a>
-                </li>
-                <li class="nav-item">
+
                   <a class="nav-link" href="news_and_events.html">
                     News &amp; Events
                   </a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="where_we_work.html">
                     Where We Work
                   </a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="contact_us.html">
                     Contact Us
                   </a>
-                </li>
-              </ul>
             </nav>
           </header>
         </div>
         <!-- end col 12 for nav -->
       </div>
       <!-- end of nav bar row -->
+      <!-- main row content -->
+
 
       <!-- row with main content -->
-      <div class="row">
+<main class="row">
 
         <!-- content goes here -->
+<aside class="col-md-3">
+<ul>
+  <li><a href="#">What We Do</a></li>
+  <hr>
+  <li><a href="#">
+    <ul>
+      <li><a href="#">Subrogation</a></li>
+      <li><a href="#">Property</a></li>
+      <li><a href="#">Workers'
+        <br>Compensation</a></li>
+    </ul>
+  </a></li>
+  <li><a href="#">
+    <ul>
+      <li><a href="#">Litigation</a></li>
+      <li><a href="#">Appellate</a></li>
+      <li><a href="#">Commercial</a></li>
+      <li><a href="#">Defense</a></li>
+      <li><a href="#">Labor/Employment</a></li>
+    </ul>
+  </a></li>
+  <li><a href="#">
+    <ul>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Brokerage
+        <br> Agreement</a></li>
+      <li><a href="#">Business Formation</a></li>
+      <li><a href="#">Business Related Contracts</a></li>
+      <li><a href="#">Labor/Employment</a></li>
+    </ul>
+  </a></li>
+  <ul>
+  <li><a href="#">
+    Transportation
+  </a></li>
+    </ul>
+</ul>
+</aside>
+<article class="col-md-9">
 
-      </div>
+    <div class="row">
+      <p class="col-md-12">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </div>
+    <div class="row">
+<div class="col-md-6">
+  <img src="../media/architecture-buildings-business-331990.jpg" alt="We're Open Sign">
+  <!-- thanks to https://www.pexels.com/photo/architecture-buildings-business-car-331990/ -->
+
+  <img src="../media/contemporary-family-furniture-189295.jpg" alt="Waiting Room">
+  <!-- thanks to https://www.pexels.com/photo/yellow-vacant-sofa-in-living-room-189295/ -->
+    </div>
+  <div class="col-md-6">
+    <img src="../media/business-chairs-contemporary-416320.jpg" alt="Confrence Room">
+    <!-- thanks to https://www.pexels.com/photo/chairs-daylight-designer-empty-416320/ -->
+    <img src="../media/pexels-photo-273209.jpeg" alt="Sky Scrapper">
+    <!-- thanks to https://www.pexels.com/photo/architecture-black-and-white-building-business-273209/ -->
+
+  </div>
+
+</div>
+</article>
+
+</main>
       <!-- end of row with main content -->
 
       <footer>
@@ -77,38 +132,29 @@
             <nav class="navbar justify-content-center bottom-nav">
 
               <!-- Links -->
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">
-                      Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="who_we_are.html">
-                      Who We Are
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="what_we_do.html">
-                      What We Do
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news_and_events.html">
-                      News &amp; Events
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="where_we_work.html">
-                      Where We Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact_us.html">
-                      Contact Us
-                    </a>
-                </li>
-              </ul>
+              <a class="nav-link" href="../index.html">
+                  Home
+                </a>
+                <span class="bottom-divider">&mdash;</span>
+              <a class="nav-link" href="who_we_are.html">
+                  Who We Are
+                </a>
+                <span class="bottom-divider">&mdash;</span>
+              <a class="nav-link" href="#">
+                  What We Do
+                </a>
+                <span class="bottom-divider">&mdash;</span>
+              <a class="nav-link" href="news_and_events.html">
+                  News &amp; Events
+                </a>
+                <span class="bottom-divider">&mdash;</span>
+              <a class="nav-link" href="where_we_work.html">
+                  Where We Work
+                </a>
+                <span class="bottom-divider">&mdash;</span>
+              <a class="nav-link" href="contact_us.html">
+                  Contact Us
+                </a>
             </nav>
           </div>
           <!-- end col 12 for nav -->
@@ -133,6 +179,7 @@
 
     </div>
     <!-- end big column -->
+
   <!-- end big container -->
   <!-- Bootstrap 4.1.0 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">

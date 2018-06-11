@@ -32,7 +32,7 @@ a:hover{
 }
 ul{
   list-style: none;
-  padding: 0px;
+    padding: 20px 10px 6px;
 }
 .navbar{
  border-top: solid black 1px;
@@ -74,28 +74,42 @@ aside{
 aside ul{
   background-color: rgba(146, 53, 48, 0.99);
   color: white;
-  padding: 20px 10px 6px;
   font-size: 11px;
 }
 aside a{
   color: inherit;
   font-size: 12px;
 }
-
-
-aside li {
-  padding-bottom: 20px;
+aside ul li{
+  padding-top: 10px;
 }
+aside ul li:first-of-type{
+  padding-top: 0px;
+}
+aside ul li ul{
+  padding: 0px;
+}
+aside ul li ul li{
+  padding-left: 9px;
+  padding-top: 0px;
+}
+aside ul li ul li:first-of-type{
+  padding-left: 0px;
+}
+
+
 aside a:hover{
   font-weight: bolder;
   color: inherit;
 }
-aside li:first-of-type{
+aside::first-line{
   font-size: 11px;
+  padding-top: 0px;
   font-weight: bold;
   padding-bottom: 0px;
   text-transform: uppercase;
 }
+
 aside hr{
   border-bottom: 1px solid white;
   margin: .5rem 0rem;
@@ -107,7 +121,6 @@ hr{
 #news-feed{
   height: 350px;
   overflow: hidden;
-  padding: 20px 10px;
   margin-left: 0px;
 }
 
@@ -133,7 +146,14 @@ hr{
 .contact-info a{
   color: rgba(146, 53, 48, 0.99);
 }
-
+.contact-info ul{
+ padding: 0px;
+ margin: 0px;
+}
+.contact-info li{
+  padding: 0px;
+  margin: 0px;
+}
 .bottom-nav{
   font-size: 10px;
   text-transform: uppercase;
