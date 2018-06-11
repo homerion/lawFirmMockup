@@ -60,26 +60,28 @@ img{
   padding: 10px;
   outline: 1px solid grey;
   outline-offset: -8px;
+  width: 100%;
+  height: 118px;
+  margin-bottom: 20px;
 }
 .bg-img{
   height: 350px;
   width: 98%;
 }
 aside{
+    height: 100%;
+}
+aside ul{
   background-color: rgba(146, 53, 48, 0.99);
   color: white;
-  padding: 20px 0px 6px;
+  padding: 20px 10px 6px;
   font-size: 11px;
-
 }
 aside a{
   color: inherit;
   font-size: 12px;
 }
-.aside-column{
- /* margin-left: 15px; */
-/* margin-right: 45px; */
-}
+
 
 aside li {
   padding-bottom: 20px;
@@ -106,7 +108,9 @@ hr{
   height: 350px;
   overflow: hidden;
   padding: 20px 10px;
+  margin-left: 0px;
 }
+
 .index-content{
   margin: 12px 0px;
   padding-top: 20px;
