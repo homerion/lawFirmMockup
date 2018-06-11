@@ -86,7 +86,6 @@ aside img{
   width: 156px;
   height: 94px;
   padding: 0px;
-  margin: 10px;
 }
 aside ul li{
   padding-top: 10px;
@@ -130,9 +129,10 @@ hr{
   background-color: grey;
   border-right: solid 15px #f8f9fa;
 }
-img.grey-aside{
+.grey-aside img{
   border: solid black 1px;
-  width: 198px;
+  /* width: 198px; */
+  margin: 10px;
 }
 #news-feed{
   height: 350px;
