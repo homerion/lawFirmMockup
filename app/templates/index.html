@@ -1,0 +1,62 @@
+{%extends 'base.html'%}
+
+
+
+{%block app_content%}
+<main>
+  <!-- content goes here -->
+
+  <!-- first main row -->
+  <div class="row">
+    <!-- left index column -->
+    <div class="col-md-9 img-fluid">
+      <img src="../static/media/PIXNIO-379415.jpeg" alt="Forest Image" class="bg-img">
+      <!-- image is public domain according to https://pixnio.com/photos/nature-landscapes/forest -->
+    </div>
+    <!-- left index column end -->
+    <!-- right index column -->
+    <div class="col-md-3">
+      <!-- starts the news feed -->
+      <aside id="news-feed">
+        <ul>
+          <li>NEWS FEED</li>
+          <hr>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ul>
+      </aside>
+      <!-- ends the news feed -->
+    </div>
+    <!-- right index column end -->
+  </div>
+  <!-- end first main row -->
+
+  <!-- second main row -->
+  <div class="row">
+    <!-- short description of law firm -->
+    <div class="col-md-8 index-content">
+      <p>Welcome to the website!</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    <!-- end description of law firm -->
+    <!-- the contact info -->
+    <div class="col-md-2 offset-md-1 contact-info">
+      <ul>
+        <li>Homer, Hammer, &amp; Hall</li>
+        <li>123 Lorem Street, Suite 1234 Chicago, Illinois 12345</li>
+        <li>123-456-7890 phone</li>
+        <li>987-654-3210 fax</li>
+        <li><a href="#">HomerHammerHall@gmail.com</a></li>
+      </ul>
+    </div>
+    <!-- end contact info -->
+  </div>
+  <!-- end second main row -->
+</main>
+{%endblock%}
