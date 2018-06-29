@@ -1,0 +1,71 @@
+ends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{%block title%}
+{{ title}}
+{%endblock%}
+
+
+{%block app_content%}
+<main class="row">
+
+  <!-- content goes here -->
+  <aside class="col-md-3">
+    <ul>
+      <li>
+        <a href="#">Who We Are</a>
+      </li>
+      <hr>
+      <li>
+        <a href="#">Welcome</a>
+      </li>
+      <li>
+        <a href="#">Attorneys</a>
+      </li>
+      <li>
+        <a href="#">Staff</a>
+      </li>
+      <li>
+        <a href="#">Reputation</a>
+      </li>
+      <li>
+        <a href="#">History</a>
+      </li>
+      <li>
+        <img src="https://place-hold.it/156x94" class="img-fluid" alt="Blank Image">
+      </li>
+    </ul>
+  </aside>
+  <article class="col-md-9">
+
+    <div class="row">
+      <p class="col-md-12">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../media/architecture-buildings-business-331990.jpg" alt="We're Open Sign">
+        <!-- thanks to https://www.pexels.com/photo/architecture-buildings-business-car-331990/ -->
+
+        <img src="../media/contemporary-family-furniture-189295.jpg" alt="Waiting Room">
+        <!-- thanks to https://www.pexels.com/photo/yellow-vacant-sofa-in-living-room-189295/ -->
+
+        <img src="../media/pexels-photo-768125.jpeg" alt="Books">
+        <!-- thanks to https://www.pexels.com/photo/books-768125/ -->
+      </div>
+      <div class="col-md-6">
+        <img src="../media/business-chairs-contemporary-416320.jpg" alt="Confrence Room">
+        <!-- thanks to https://www.pexels.com/photo/chairs-daylight-designer-empty-416320/ -->
+        <img src="../media/pexels-photo-273209.jpeg" alt="Sky Scrapper">
+        <!-- thanks to https://www.pexels.com/photo/architecture-black-and-white-building-business-273209/ -->
+
+      </div>
+
+    </div>
+  </article>
+
+</main>
+
+{%endblock%}

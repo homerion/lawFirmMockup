@@ -1,0 +1,89 @@
+{%extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{%block title%}
+{{ title}}
+{%endblock%}
+
+
+{%block app_content%}
+<main class="row">
+
+  <!-- content goes here -->
+  <aside class="col-md-3">
+    <ul>
+      <li><a href="#">What We Do</a></li>
+      <hr>
+      <li>
+        <a href="#">
+          <ul>
+            <li><a href="#">Subrogation</a></li>
+            <li><a href="#">Property</a></li>
+            <li><a href="#">Workers'
+    <br>Compensation</a></li>
+          </ul>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <ul>
+            <li><a href="#">Litigation</a></li>
+            <li><a href="#">Appellate</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Defense</a></li>
+            <li><a href="#">Labor/Employment</a></li>
+          </ul>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <ul>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Brokerage
+    <br> Agreement</a></li>
+            <li><a href="#">Business Formation</a></li>
+            <li><a href="#">Business Related Contracts</a></li>
+            <li><a href="#">Labor/Employment</a></li>
+          </ul>
+        </a>
+      </li>
+      <ul>
+        <li><a href="#">
+Transportation
+</a></li>
+        <li>
+          <img src="https://place-hold.it/156x94" class="img-fluid" alt="Blank Image">
+        </li>
+      </ul>
+    </ul>
+  </aside>
+  <article class="col-md-9">
+
+    <div class="row">
+      <p class="col-md-12">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../media/architecture-buildings-business-331990.jpg" alt="We're Open Sign">
+        <!-- thanks to https://www.pexels.com/photo/architecture-buildings-business-car-331990/ -->
+
+        <img src="../media/contemporary-family-furniture-189295.jpg" alt="Waiting Room">
+        <!-- thanks to https://www.pexels.com/photo/yellow-vacant-sofa-in-living-room-189295/ -->
+      </div>
+      <div class="col-md-6">
+        <img src="../media/business-chairs-contemporary-416320.jpg" alt="Confrence Room">
+        <!-- thanks to https://www.pexels.com/photo/chairs-daylight-designer-empty-416320/ -->
+        <img src="../media/pexels-photo-273209.jpeg" alt="Sky Scrapper">
+        <!-- thanks to https://www.pexels.com/photo/architecture-black-and-white-building-business-273209/ -->
+
+      </div>
+
+    </div>
+  </article>
+
+</main>
+
+{%endblock%}

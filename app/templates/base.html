@@ -17,6 +17,8 @@
 <div class="container">
   <div class="col-md-12 bg-light primary-column">
 
+
+
     <div class="row topmost-row">
       <!-- column to contain brand info -->
       <div class="col-md-5 offset-md-1">
@@ -24,23 +26,36 @@
           <a href="#">Homer, Hammer, &amp; Hall</a>
         </h2>
       </div>
+<!-- login menu -->
+
+      <div class="nav login col-md-2 offset-md-3">
+      {%if current_user.is_anonymous %}
+        <a class="nav-link" href="{{url_for('login')}}" >Login</a>
+        <a class="nav-link" href="{{url_for('register')}}" >Register</a>
+      {%else %}
+        <a class="nav-link" href="{{url_for('profile')}}" >Logout</a>
+        <a class="nav-link" href="{{url_for('logout')}}" >Logout</a>
+      {%endif%}
+      </div>
+<!-- end login menu -->
+
       <!-- end column to contain brand info -->
     </div>
     <nav class="nav justify-content-center top-nav">
       <!-- Links -->
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="{{url_for('who')}}">
             Who We Are
           </a>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="{{url_for('what')}}">
             What We Do
           </a>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="{{url_for('news')}}">
             News &amp; Events
           </a>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="{{url_for('where')}}">
             Where We Work
           </a>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="{{url_for('contact')}}">
             Contact Us
           </a>
     </nav>
@@ -106,5 +121,7 @@
     <!-- end row with copyright info -->
   </footer>
 </div>
+<!-- end primary column -->
 </div>
+<!-- end container -->
 {%endblock%}
