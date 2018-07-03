@@ -10,13 +10,18 @@
 {%block app_content%}
 <div class="row">
   <div class="col-md-4">
-  <img src="" alt="Filler Profile Picture">
+  <img src="https://place-hold.it/156x94" class="img-fluid" alt="Blank Profile Picture">
 
   </div>
   <div class="col-md-4">
-    <h3>Welcom {{user.username}}!</h3>
+    <h1>Welcome {{user.username}}!</h1>
+    <hr>
+    {% if user.name is none %}
+    <p>We currently don't know your name</p>
+    {% else %}
+    <p>Your name is {{user.name}}</p>
+    {% endif %}
     <p>Your email is {{user.email}} </p>
-
   </div>
 
 

@@ -55,6 +55,13 @@ margin: 5px;
   border-left: none;
 }
 
+.login{
+background-color: rgba(146, 53, 48, 0.99);
+margin-top: none;
+padding-top: none;
+border-radius: 0 0 1.5 1.5;
+}
+
 img{
   border: solid 1px black;
   padding: 10px;
