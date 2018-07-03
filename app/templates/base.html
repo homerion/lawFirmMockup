@@ -13,9 +13,25 @@
 
 
 {%block navbar%}
+<!-- start entire container -->
 <div class="container">
+
+<!-- start primary column -->
   <div class="col-md-12 bg-light primary-column">
 
+    <!-- login menu -->
+        <div class="row">
+          <div class="nav login col-md-2 offset-md-10">
+          {% if current_user.is_anonymous %}
+            <a class="nav-link" href="{{url_for('login')}}" >Login</a>
+            <a class="nav-link" href="{{url_for('register')}}" >Register</a>
+          {% else %}
+            <a class="nav-link" href="{{url_for('profile')}}" >Profile</a>
+            <a class="nav-link" href="{{url_for('logout')}}" >Logout</a>
+          {% endif %}
+          </div>
+        </div>
+    <!-- end login menu -->
 
 
     <div class="row topmost-row">
@@ -25,21 +41,10 @@
           <a href="{{url_for('index')}}">Homer, Hammer, &amp; Hall</a>
         </h2>
       </div>
-<!-- login menu -->
-
-      <div class="nav login col-md-2 offset-md-3">
-      {% if current_user.is_anonymous %}
-        <a class="nav-link" href="{{url_for('login')}}" >Login</a>
-        <a class="nav-link" href="{{url_for('register')}}" >Register</a>
-      {% else %}
-        <a class="nav-link" href="{{url_for('profile')}}" >Profile</a>
-        <a class="nav-link" href="{{url_for('logout')}}" >Logout</a>
-      {% endif %}
-      </div>
-<!-- end login menu -->
-
       <!-- end column to contain brand info -->
     </div>
+
+    <!-- top nav -->
     <nav class="nav justify-content-center top-nav">
       <!-- Links -->
       <a class="nav-link" href="{{url_for('who')}}">
@@ -58,7 +63,7 @@
             Contact Us
           </a>
     </nav>
-
+<!-- end top nav -->
 {%endblock%}
 
 {%block content%}

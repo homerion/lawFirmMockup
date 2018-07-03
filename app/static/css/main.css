@@ -56,12 +56,23 @@ margin: 5px;
 }
 
 .login{
-background-color: rgba(146, 53, 48, 0.99);
-margin-top: none;
-padding-top: none;
-border-radius: 0 0 1.5 1.5;
+/* background-color: darkgrey; */
+color: black;
+margin: none;
+padding-right: 0px;
+border-top: none;
+background-color: red;
+}
+.login a {
+  border-left: solid 1px black;
 }
 
+.login a:hover{
+  color: darkgrey;
+}
+.login a:first-of-type{
+  border-left: none;
+}
 img{
   border: solid 1px black;
   padding: 10px;
