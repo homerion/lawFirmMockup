@@ -49,7 +49,8 @@ def register():
         return redirect(url_for('index'))
     register_form = RegisterForm()
     if register_form.validate_on_submit():
-        user = User(name=register_form.name.data, \
+        user = User(first_name=register_form.first_name.data, \
+            last_name=register_form.last_name.data, \
             username=register_form.username.data, \
             email=register_form.email.data)
         user.set_password(register_form.password.data)

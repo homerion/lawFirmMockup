@@ -16,10 +16,10 @@
   <div class="col-md-4">
     <h1>Welcome {{user.username}}!</h1>
     <hr>
-    {% if user.name is none %}
+    {% if user.first_name is none and user.last_name is none %}
     <p>We currently don't know your name</p>
     {% else %}
-    <p>Your name is {{user.name}}</p>
+    <p>Your name is {{user.first_name}} {{user.last_name}}</p>
     {% endif %}
     <p>Your email is {{user.email}} </p>
   </div>
